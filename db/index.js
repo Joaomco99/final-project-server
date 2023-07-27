@@ -7,7 +7,8 @@ const port = process.env.PORT || 5000;
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
 
 const MONGO_URI =
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Photohub";
+  // process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Photohub";
+  "mongodb+srv://joao99:Joaoluis99@cluster0.yzl4soa.mongodb.net/"
 
 mongoose
   .connect(MONGO_URI)
