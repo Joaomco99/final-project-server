@@ -23,7 +23,11 @@ module.exports = (app) => {
   app.set("trust proxy", 1);
 
   // controls a very specific header to pass headers from the frontend
-  app.use(cors());
+  app.use(cors(
+    {
+      origin: "https://main--magical-mandazi-41bb4e.netlify.app/"
+    }
+  ));
 
 app.use(bodyParser.json());
 
